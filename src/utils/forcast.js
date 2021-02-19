@@ -10,7 +10,7 @@ const weatherStack = (latitude, longitude, callback) => {
             callback("Unable to find result!", undefined)
         } else {
             callback(undefined, {
-                description: body.current.weather_descriptions[0] + '! It is currently ' + body.current.temperature + ' degress out. It feelslike ' + body.current.feelslike + ' degress',
+                description: body.current.weather_descriptions[0] + '! It is currently ' + body.current.temperature + ' degress out. It feelslike ' + body.current.feelslike + ' degress.' + ' The humidity is ' + body.current.humidity + ' percent.',
             })
         }
     })
